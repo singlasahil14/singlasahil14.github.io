@@ -91,18 +91,51 @@
       </tr>
       
       <tr>
-        <td width="30%" valign="top" align="center" href="https://openreview.net/pdf?id=tD7eCtaSkR">
-          <a href="https://openreview.net/pdf?id=tD7eCtaSkR">
+        <td width="30%" valign="top" align="center" href="https://openreview.net/pdf?id=76w7bsdViZf">
+          <a href="https://openreview.net/pdf?id=76w7bsdViZf">
+            <img src="images/teaser_figures/2022NeurIPShard.jpg" alt="sym" width="100%" style="border-style: none" />
+          </a>
+        </td>
+        <td width="70%" valign="top">
+          <a href="https://openreview.net/forum?id=ftKnhsDquqr" id="2022NeurIPShard_paper"><paper_title>Hard ImageNet: Segmentations for Objects with Strong Spurious Cues</paper_title></a>
+          <br>Mazda Moayeri, <strong>Sahil Singla</strong>, Soheil Feizi.<br> <em>NeurIPS</em>, 2022<br><div class="paper" id="2022NeurIPShard">
+            <a href="https://openreview.net/pdf?id=76w7bsdViZf">pdf</a>
+            | <a href="javascript:toggleblock('2022NeurIPShard_abs')">abstract</a>
+            | <a href="javascript:toggleblock('2022NeurIPShard_bib')">bibtex</a>
+            | <a href="https://github.com/singlasahil14/SOC">code</a><br>
+            <p align="justify"><i id="2022NeurIPShard_abs">
+              Deep classifiers are known to rely on spurious features, leading to reduced generalization. The severity of this problem varies significantly by class. We identify  classes in ImageNet with very strong spurious cues, and collect segmentation masks for these challenging objects to form \emph{Hard ImageNet}. Leveraging noise, saliency, and ablation based metrics, we demonstrate that models rely on spurious features in Hard ImageNet far more than in RIVAL10, an ImageNet analog to CIFAR10. We observe Hard ImageNet objects are less centered and occupy much less space in their images than RIVAL10 objects, leading to greater spurious feature reliance. Further, we use robust neural features to automatically rank our images based on the degree of spurious cues present. Comparing images with high and low rankings within a class reveals the exact spurious features models rely upon, and shows reduced performance when spurious features are absent. With Hard ImageNet's image rankings, object segmentations, and our extensive evaluation suite, the community can begin to address the problem of learning to detect challenging objects \emph{for the right reasons}, despite the presence of strong spurious cues.  
+            </i></p>
+            <p align="justify"><i id="2022NeurIPShard_bib">
+            @inproceedings{
+              moayeri2022hard,<br>
+              title={Hard ImageNet: Segmentations for 
+              Objects with Strong Spurious Cues},<br>
+              author={Mazda Moayeri and Sahil Singla and 
+              Soheil Feizi},<br>
+              booktitle={Thirty-sixth Conference on Neural 
+              Information Processing Systems Datasets and 
+              Benchmarks Track},<br>
+              year={2022},<br>
+              url={https://openreview.net/forum?id=76w7bsdViZf}<br>
+            }
+            </i></p>
+        </div></td>
+      </tr>
+      
+      <tr>
+        <td width="30%" valign="top" align="center" href="https://openreview.net/pdf?id=ftKnhsDquqr">
+          <a href="https://openreview.net/pdf?id=ftKnhsDquqr">
             <img src="images/teaser_figures/2022NeurIPSrobustness.jpg" alt="sym" width="100%" style="border-style: none" />
           </a>
         </td>
         <td width="70%" valign="top">
-          <a href="https://openreview.net/forum?id=ftKnhsDquqr" id="2022NeurIPSrobustness_paper"><paper_title>Improved techniques for deterministic l2 robustness</paper_title></a>
-          <br><strong>Sahil Singla</strong>, Soheil Feizi.<br> <em>NeurIPS</em>, 2022 (spotlight)<br><div class="paper" id="2022NeurIPSrobustness">
-            <a href="https://openreview.net/pdf?id=tD7eCtaSkR">pdf</a>
+          <a href="https://openreview.net/pdf?id=ftKnhsDquqr" id="2022NeurIPSrobustness_paper"><paper_title>Improved techniques for deterministic l2 robustness</paper_title></a>
+          <br><strong>Sahil Singla</strong>, Soheil Feizi.<br> <em>NeurIPS</em>, 2022<br><div class="paper" id="2022NeurIPSrobustness">
+            <a href="https://openreview.net/pdf?id=ftKnhsDquqr">pdf</a>
             | <a href="javascript:toggleblock('2022NeurIPSrobustness_abs')">abstract</a>
             | <a href="javascript:toggleblock('2022NeurIPSrobustness_bib')">bibtex</a>
-            | <a href="https://github.com/singlasahil14/SOC">code</a><br>
+            | <a href="https://github.com/singlasahil14/improved_l2_robustness">code</a><br>
             <p align="justify"><i id="2022NeurIPSrobustness_abs">
               Training convolutional neural networks (CNNs) with a strict 1-Lipschitz constraint under the l_{2} norm is useful for adversarial robustness, interpretable gradients and stable training. 1-Lipschitz CNNs are usually designed by enforcing each layer to have an orthogonal Jacobian matrix (for all inputs) to prevent the gradients from vanishing during backpropagation. However, their performance often significantly lags behind that of heuristic methods to enforce Lipschitz constraints where the resulting CNN is not provably 1-Lipschitz. In this work, we reduce this gap by introducing (a) a procedure to certify robustness of 1-Lipschitz CNNs by replacing the last linear layer with a 1-hidden layer MLP that significantly improves their performance for both standard and provably robust accuracy, (b) a method to significantly reduce the training time per epoch for Skew Orthogonal Convolution (SOC) layers (>30\% reduction for deeper networks) and (c) a class of pooling layers using the mathematical property that the l_{2} distance of an input to a manifold is 1-Lipschitz. Using these methods, we significantly advance the state-of-the-art for standard and provable robust accuracies on CIFAR-10 (gains of  +1.79\% and +3.82\%) and similarly on CIFAR-100 (+3.78\% and +4.75\% across all networks.
             </i></p>
@@ -515,6 +548,8 @@
     </table>
   </body>
   <script xml:space="preserve" language="JavaScript">hideallbibs();</script>
+  <script xml:space="preserve" language="javascript">hideblock('2022NeurIPShard_abs');</script>
+  <script xml:space="preserve" language="javascript">hideblock('2022NeurIPShard_bib');</script>
   <script xml:space="preserve" language="javascript">hideblock('2022NeurIPSrobustness_abs');</script>
   <script xml:space="preserve" language="javascript">hideblock('2022NeurIPSrobustness_bib');</script>
   <script xml:space="preserve" language="javascript">hideblock('2022ICLRrobustness_abs');</script>
