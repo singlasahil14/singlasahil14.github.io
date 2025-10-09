@@ -22,17 +22,10 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="importmap">
-      {
-        "imports": {
-          "@vercel/analytics": "https://unpkg.com/@vercel/analytics@latest/dist/index.js"
-        }
-      }
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>
-    <script type="module">
-      import { inject } from "@vercel/analytics";
-      inject();
-    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
   </head>
   <body>
     <table width="840" border="0" align="center" border="0" cellspacing="0" cellpadding="20">
