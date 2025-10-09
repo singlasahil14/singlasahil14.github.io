@@ -22,8 +22,15 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="importmap">
+      {
+        "imports": {
+          "@vercel/analytics": "https://unpkg.com/@vercel/analytics@latest/dist/index.js"
+        }
+      }
+    </script>
     <script type="module">
-      import { inject } from 'https://unpkg.com/@vercel/analytics';
+      import { inject } from "@vercel/analytics";
       inject();
     </script>
   </head>
